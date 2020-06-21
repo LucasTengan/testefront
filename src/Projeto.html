@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste de front end</title>
+    <link rel="stylesheet" href="./../css/bootstrap.min.css" >
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans" />
+</head>
+<body>
+    <header id="cabecalho">
+        <img src="./assets/logo1.png" alt="" id="img">
+    </header>
+    <div class="formulario">
+        <header>
+            <h4><b>Venha trabalhar na Docket</b></h4>
+        </header>
+        <section>
+            <p>Preencha o formulário abaixo e venha trabalhar em uma das startups mais desejadas do Brasil!</p>
+        </section>
+        <h5>Dados pessoais</h5>
+        <form id="formID">
+            <div class="form-group">
+                <label for="nome"><span>* </span>Nome completo:</label>
+                <input type="text" class="form-control" id="nome" placeholder="João Henrique Silva e Souza" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email"><span>* </span>E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="seunome@sobrenome.com.br" required>
+            </div>
+
+            <div class="form-group" id="teste">
+                <label for="tel1"><span>* </span>Telefone 1:</label>
+                <input type="tel" class="form-control" id="tel1" placeholder="(88) 8888-8888" required>
+            </div>
+            <div class="form-group" id="teste">
+                <p><label for="tel2">Telefone 2:</label></p>
+                <p><input type="tel" class="form-control" id="tel2" placeholder="(88) 8888-8888">
+            </div>
+            <button class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    <div class="resultado">
+        <header>
+            <h5>FICHA DO CANDIDATO</h5>
+        </header>
+        <div id="curriculo">
+            <p><i>Preencha o formulário e clique em "Enviar" após conferir atentamente</i></p>
+        </div>
+
+        <div id="projetos">
+            <h5 id="projetos2">Seus projetos: </h5>
+            <div class="carousel slide" id="slide" data-ride="carousel">
+                <div class="carousel-inner bg-dark">
+                    <div id="imagemc" class="carousel-item active" >
+                        <img class="img d-block m-auto w-50" src="./assets/apple-gear-looking-pretty.jpg"></img>
+                    </div>
+                    <div id="imagemc" class="carousel-item">
+                        <img class="img d-block mx-auto w-50" src="./assets/type-away-numero-dos.jpg"></img>
+                    </div>
+                    <div id="imagemc" class="carousel-item">
+                        <img class="img d-block mx-auto w-50" src="./assets/02.jpg"></img>
+                    </div>
+                    <div id="imagemc" class="carousel-item">
+                        <img class="img d-block mx-auto w-50" src="./assets/photo-1451186859696-371d9477be93.jpg"></img>
+                    </div>
+                </div>
+                <a href="#slide" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#slide" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="alert alert-success" role="alert" id="aviso">
+        Candidatura enviada com sucesso!
+    </div>
+
+    <script src="./../js/jquery.min.js"></script>
+    <script src="./../js/popper.min.js"></script>
+    <script src="./../js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/axios@0.16.2/dist/axios.js"></script>
+    <script src="Projeto.js"></script>
+</body>
+</html>
